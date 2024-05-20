@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JejariKU dan JejariMU | Utama</title>
+  <link rel="stylesheet" href="/trycrossword/try.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="home" class="page flex-center flex-column ">
+      <h1 id="tajuk">Jejarimu Vs Jejariku</h1>
+      <a href="nota.html">
+        
+        <button id="">Nota</button>
+      </a>
+      <a href="video.html">
+        <button id="">Video Penerangan</button>
+      </a>
+      <button onclick="playGame()">Quiz</button>
+
+    </div>
+
+    <div id="game" class="page hidden justify-center flex-column">
+        <button onClick="navigateTo('home')">Go Home</button>
+        <div id="hud">
+          <h3 id="questionCounter">Question 1/5</h3>
+          <h3 id="score">Score: 0</h3>
+        </div>
+        <div class="image-container">
+          <img src="" alt="" id="question-image">
+        </div>
+        <h2 id="question">What is the name of the thing?!</h2>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice" data-number="1">Choice 1!</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice" data-number="2">Choice 2!</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice" data-number="3">Choice 3!</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice" data-number="4">Choice 4!</p>
+        </div>
+        <div class="fill-blank-container">
+          <input type="text" id="fillBlankAnswer" placeholder="Your Answer" />
+          <button onclick="checkFillBlankAnswer()">Submit</button>
+        </div>
+      </div>
+      
+
+    <div id="end" class="page hidden flex-center flex-column">
+      <h1 class="text-center">Great Job!</h1>
+      <h2 id="finalScore">100</h2>
+      <button onClick="navigateTo('home')">Go Home</button>
+
+    </div>
+
+
+    <script src="/trycrossword/try.js"></script>
+</body>
+
+</html>

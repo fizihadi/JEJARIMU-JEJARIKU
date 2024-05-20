@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+/*brand*/
+.brand {
+  display: flex;
+}
+
+.brand a {
+  color: #f6f6f2;
+}
+
+/*header*/
+
+.head {
+  background-color: #C09F80;
+  color: #f6f6f2;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #565656 5px solid;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: #f6f6f2;
+  font-size: 20px;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.head h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.head .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.head a:hover {
+  color: #eddcd9;
+}
+
+.head .current a {
+  color: #eddcd9;
+  font-weight: bold;
+}
+
+.head .highlight {
+  color: #eddcd9;
+}
+
+/*showcase*/
+
+.showcase {
+  min-height: 400px;
+  text-align: center;
+  background-image: url('/image/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff;
+  height: 100%;
+}
+
+.showcase .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase h1 {
+  font-size: 55px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.showcase p {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+/*book boxes*/
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7cec7;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 2px solid;
+}
+
+.boxes .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.social {
+  background-color: #C09F80;
+  color: #f4f4f4;
+  border-radius: 10px;
+  border: black 2px solid;
+  text-align: center;
+}
+
+body {
+  background-image: url();
+  background-repeat: no-repeat;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #565656;
+}
+
+@media(max-width: 768px) {
+  .head .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .container {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  .boxes .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    padding-bottom: 20px;
+  }
+
+  .about .container {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .why {
+    padding-bottom: 20pxs;
+  }
+
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
